@@ -53,6 +53,8 @@ eredmeny2 = label2(eredmeny1, b)
 eredmeny3 = label3(eredmeny2, c)
 eredmeny4 = label4(eredmeny3, d)
 
+eredmeny4 -= (a + b + c + d)/2
+
 if eredmeny4 <= 0:
     print(1, 2, 3, 4)
 elif 0.5 <= eredmeny4 <= 19.5:
