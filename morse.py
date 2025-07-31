@@ -19,7 +19,7 @@ if choice == 'decode':
     decode_hosz = len(blocks)
 
     while 0 < decode_hosz:
-        print(morse_lista.get(blocks.pop(0)),end='')
+        print(morse_lista[(blocks.pop(0))],end='')
         decode_hosz -= 1
 elif choice == 'encode':
     encode = input(f'Adja be a code-olásra szánt söveget: ')
@@ -29,5 +29,5 @@ elif choice == 'encode':
     encode_hosz = len(encode)
     
     while 0 < encode_hosz:
-        print(reverse_morse.get(betu.pop(0)),end=' ')
+        print(reverse_morse[(betu.pop(0))],end=' ')
         encode_hosz -=1
