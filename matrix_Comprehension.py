@@ -33,7 +33,7 @@ step = 'not_valid'
 lepes_szam = 0
 
 
-while check_board() == True:
+while check_board():
     while step != 'valid':
         try:
             p1i = int(input(f"Hova szeretnéd rakni 1-9 : "))-1
@@ -51,4 +51,5 @@ while check_board() == True:
         break
     lepes_szam +=1
 
-print('A tábla megtelt döntetlen.')
+if not check_win(): 
+    print('A tábla megtelt döntetlen.')
